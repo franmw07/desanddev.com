@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
 import Nav from "../components/Nav/Nav";
-import CVCard from "../components/CVcard/CVcard";
+import CVcard from "../components/CVcard/CVcard";
 import EducationCard from "../components/EducationCard/EducationCard";
 import Skills from "../components/SkillsCard/SkillsCard";
 import PortfolioCard from "../components/PortfolioCard/PortfolioCard";
