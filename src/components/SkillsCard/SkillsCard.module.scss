@@ -1,0 +1,130 @@
+// ==============================
+// Sección Skills estilo galería
+// ==============================
+.skillsSection {
+  width: calc(100% - 40px);
+  padding: 15px 20px;
+  background: #e7e6e6;
+  margin: 0 20px;
+  border-radius: 10px;
+
+  // Cada bloque (Diseño, Desarrollo, Habilidades)
+  .skillGroupDesiner,
+  .skillGroupDevelop,
+  .skillGroupHability {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #111; // acento visual
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px 40px;
+      width: 100%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 8px;
+        white-space: nowrap; // evita saltos de línea
+
+        div {
+          width: 80px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+        p {
+          font-size: 15px;
+          color: #444;
+        }
+      }
+    }
+  }
+  .skillGroupDesiner,
+  .skillGroupDevelop {
+    ul {
+      li {
+        width: calc((100% / 5) - 35px);
+      }
+    }
+  }
+  .skillGroupHability {
+    ul {
+      gap: 20px;
+      li {
+        width: calc((100% / 3) - 20px);
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+  @media only screen and (max-width: 960px) {
+    .skillGroupDesiner,
+    .skillGroupDevelop {
+      ul {
+        li {
+          width: calc((100% / 4) - 35px);
+        }
+      }
+    }
+
+    .skillGroupHability {
+      ul {
+        gap: 20px;
+        li {
+          width: calc((100% / 2) - 20px);
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 660px) {
+    .skillGroupDesiner,
+    .skillGroupDevelop {
+      ul {
+        li {
+          width: calc((100% / 3) - 35px);
+        }
+      }
+    }
+    .skillGroupHability {
+      ul {
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .skillGroupDesiner,
+    .skillGroupDevelop {
+      ul {
+        li {
+          width: calc((100% / 2) - 20px);
+        }
+      }
+    }
+  }
+}
