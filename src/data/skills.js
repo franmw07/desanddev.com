@@ -1,46 +1,58 @@
+import Illustrator from "../assets/logos/Adobe_Illustrator.png";
+import Photoshop from "../assets/logos/adobe-photoshop.png";
+import AdobeXD from "../assets/logos/Adobe-xd.webp";
+import AfterEffects from "../assets/logos/adobe-after-effects.webp";
+import PremierePro from "../assets/logos/adobe-premier-pro.webp";
+import HTML5 from "../assets/logos/html5.png";
+import CSS3 from "../assets/logos/CSS3.webp";
+import JavaScript from "../assets/logos/js.webp";
+import jQuery from "../assets/logos/jq.webp";
+import React from "../assets/logos/react.webp";
+
+
 export const skills = {
     diseño: [
     { 
       nombre: { es: "Adobe Illustrator", en: "Adobe Illustrator" }, 
-      logo: "../../assets/logos/Adobe_Illustrator.png" 
+      logo: Illustrator 
     },
     { 
       nombre: { es: "Adobe Photoshop", en: "Adobe Photoshop" }, 
-      logo: "../../assets/logos/adobe-photoshop.png" 
+      logo: Photoshop 
     },
     { 
       nombre: { es: "Adobe XD", en: "Adobe XD" }, 
-      logo: "../../assets/logos/Adobe-xd.webp" 
+      logo: AdobeXD 
     },
     { 
       nombre: { es: "Adobe After Effects", en: "Adobe After Effects" }, 
-      logo: "../../assets/logos/adobe-after-effects.webp" 
+      logo: AfterEffects 
     },
     { 
       nombre: { es: "Adobe Premiere Pro", en: "Adobe Premiere Pro" }, 
-      logo: "../../assets/logos/adobe-premier-pro.webp" 
+      logo: PremierePro 
     },
   ],
   desarrollo: [
     { 
       nombre: { es: "HTML5", en: "HTML5" }, 
-      logo: "../../assets/logos/html5.png" 
+      logo: HTML5
     },
     { 
       nombre: { es: "CSS3", en: "CSS3" }, 
-      logo: "../../assets/logos/CSS3.webp" 
+      logo: CSS3 
     },
     { 
       nombre: { es: "JavaScript", en: "JavaScript" }, 
-      logo: "../../assets/logos/js.webp" 
+      logo: JavaScript 
     },
     { 
       nombre: { es: "jQuery", en: "jQuery" }, 
-      logo: "../../assets/logos/jq.webp" 
+      logo: jQuery 
     },
     { 
       nombre: { es: "React", en: "React" }, 
-      logo: "../../assets/logos/react.webp" 
+      logo: React 
     },
   ],
   habilidades: [
