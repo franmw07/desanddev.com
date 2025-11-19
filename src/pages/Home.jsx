@@ -31,7 +31,7 @@ export default function Home() {
       <section id="cv">
         <h2>{lang === "es" ? "Experiencia" : "Experience"}</h2>
         {experiencia.map((item, i) => (
-          <CVCard key={i} item={item} lang={lang} />
+          <CVcard key={i} item={item} lang={lang} />
         ))}
       </section>
 
