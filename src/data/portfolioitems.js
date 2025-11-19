@@ -12,6 +12,7 @@ import pract2 from "../assets/practicas-antiguas/mohamed salah copia.jpg";
 import pract3 from "../assets/practicas-antiguas/flyer clinic therapy copia.pdf";
 import pract4 from "../assets/practicas-antiguas/tarjeta de presentacion clinic therapy copia.pdf";
 
+
 export const portfolioItems = [
   {
     id: 1,
