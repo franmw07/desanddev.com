@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Modal.module.scss";
 
-export default function Modal({ item, onClose }) {
+export default function Modal({ item, lang, onClose }) {
   if (!item) return null;
 
   // Imagen activa para el carrusel
@@ -25,7 +25,7 @@ export default function Modal({ item, onClose }) {
             {/* Imagen principal */}
             <img
               src={item.imagenes[activeIndex]}
-              alt={item.titulo}
+              alt={item.titulo[lang]}
               className={styles.mainImage}
             />
 
@@ -45,8 +45,8 @@ export default function Modal({ item, onClose }) {
         )}
 
         <div className={styles.meta}>
-          <strong>{item.titulo}</strong>
-          <p>{item.descripcion}</p>
+          <strong>{item.titulo[lang]}</strong>
+          <p>{item.descripcion[lang]}</p>
         </div>
       </div>
     </div>

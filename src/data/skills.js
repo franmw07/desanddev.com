@@ -1,3 +1,5 @@
+
+/*
 import Illustrator from "../assets/logos/Adobe_Illustrator.png";
 import Photoshop from "../assets/logos/adobe-photoshop.png";
 import AdobeXD from "../assets/logos/Adobe-xd.webp";
@@ -65,3 +67,4 @@ export const skills = {
     { es: "Constante", en: "Persistent" },
   ],
 };
+*/

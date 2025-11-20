@@ -24,44 +24,13 @@ html,
         flex-wrap: nowrap;
     }
 }
-#cv{
-    margin: 15px auto;
-    max-width: 1200px;
-}
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 36px 20px;
 }
-h2 {
-  font-size: 22px;
-  margin-bottom: 12px;
-  padding: 15px 20px;
-  margin: 0;
-}
-#education{
-    width: 100%;
-    background-color: #334a55de;
-    padding: 20px;
-    height: 100%;
-    margin: 15px auto;
-    max-width: 1200px;
-    border-radius: 5px;
-    h2{
-        padding-top: 0;
-        color: #fff;
-    }
-    .content-education{
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-}
-#skills{
-    margin: 15px auto;
-    max-width: 1200px;
-}
+#resume,
+#skills,
 #portfolio{
     display: flex;
     justify-content: flex-start;
