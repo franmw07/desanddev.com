@@ -12,11 +12,35 @@ export default function Modal({ item, lang, onClose }) {
   return (
     <div className={styles.modalBackdrop} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        <button className={styles.closeBtn} onClick={onClose}>×</button>
+        <button className={styles.closeBtn} onClick={onClose}>
+          ×
+        </button>
 
-        {/* VIDEO */}
         {item.tipo === "video" && (
-          <video controls src={item.src} poster={item.thumb} />
+          <>
+            {/* Video principal */}
+            <video
+              controls
+              src={item.videos[activeIndex].src}
+              poster={item.videos[activeIndex].thumb}
+              className={styles.mainMedia}
+            />
+
+            {/* Miniaturas de video */}
+            <div className={styles.thumbnails}>
+              {item.videos.map((vid, i) => (
+                <img
+                  key={i}
+                  src={vid.thumb}
+                  alt={`thumb-${i}`}
+                  className={`${styles.thumb} ${
+                    i === activeIndex ? styles.active : ""
+                  }`}
+                  onClick={() => setActiveIndex(i)}
+                />
+              ))}
+            </div>
+          </>
         )}
 
         {/* IMAGEN O GALERÍA */}
@@ -36,7 +60,9 @@ export default function Modal({ item, lang, onClose }) {
                   key={i}
                   src={img}
                   alt={`mini-${i}`}
-                  className={`${styles.thumb} ${i === activeIndex ? styles.active : ""}`}
+                  className={`${styles.thumb} ${
+                    i === activeIndex ? styles.active : ""
+                  }`}
                   onClick={() => setActiveIndex(i)}
                 />
               ))}

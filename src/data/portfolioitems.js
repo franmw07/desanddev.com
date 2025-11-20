@@ -4,7 +4,9 @@ import tinino3 from "../assets/tinino/new-era-9forty.jpg";
 import tinino4 from "../assets/tinino/new-era-59fifty.jpg";
 import tinino5 from "../assets/tinino/easton.jpg";
 import videoSalon from "../assets/salon-chocolate/salon-del-chocolate.mp4";
+import videoSalon1 from "../assets/salon-chocolate/ChocoMad.mp4";
 import imgVideoSalon from "../assets/salon-chocolate/CapturavideoSalon.png";
+import imgVideoSalon1 from "../assets/salon-chocolate/redesPromo.png";
 import imgSalon1 from "../assets/salon-chocolate/zCARTEL.jpg";
 import imgSalon2 from "../assets/salon-chocolate/Salon-Internacional-del-Chocolate-Madrid-2018-45-300x188-1.jpg";
 import pract1 from "../assets/practicas-antiguas/enfrentamiento 24 de abril.jpg";
@@ -35,7 +37,10 @@ export const portfolioItems = [
   {
     id: 2,
     tipo: "video",
-    src: videoSalon,
+    videos: [
+      { src: videoSalon, thumb: imgVideoSalon }, 
+      { src: videoSalon1, thumb: imgVideoSalon1 }
+    ],
     thumb: imgVideoSalon,
     titulo: {
       es: "Video Promocional — Salón del Chocolate",
