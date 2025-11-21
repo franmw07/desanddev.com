@@ -28,22 +28,26 @@ export default function Modal({ item, lang, onClose }) {
 
             {/* Miniaturas de video */}
             <>
-            <div className={styles.thumbnails}>
-              {item.videos.map((vid, i) => (
-                <img
-                  key={i}
-                  src={vid.thumb}
-                  alt={`thumb-${i}`}
-                  className={`${styles.thumb} ${
-                    i === activeIndex ? styles.active : ""
-                  }`}
-                  onClick={() => setActiveIndex(i)}
-                />
-              ))}
-            </div>
-            <div className={styles.links}>
-              {item.links != undefined && ( <a href={item.links} target="_blank">{lang === "es" ? "Ver mas" : "More info"}</a> )}
-            </div>
+              <div className={styles.thumbnails}>
+                {item.videos.map((vid, i) => (
+                  <img
+                    key={i}
+                    src={vid.thumb}
+                    alt={`thumb-${i}`}
+                    className={`${styles.thumb} ${
+                      i === activeIndex ? styles.active : ""
+                    }`}
+                    onClick={() => setActiveIndex(i)}
+                  />
+                ))}
+              </div>
+              {item.links != undefined && (
+                <div className={styles.links}>
+                  <a href={item.links} target="_blank">
+                    {lang === "es" ? "Ver mas" : "More info"}
+                  </a>
+                </div>
+              )}
             </>
           </>
         )}
@@ -60,22 +64,26 @@ export default function Modal({ item, lang, onClose }) {
 
             {/* Carrusel de miniaturas */}
             <>
-            <div className={styles.thumbnails}>
-              {item.imagenes.map((img, i) => (
-                <img
-                  key={i}
-                  src={img}
-                  alt={`mini-${i}`}
-                  className={`${styles.thumb} ${
-                    i === activeIndex ? styles.active : ""
-                  }`}
-                  onClick={() => setActiveIndex(i)}
-                />
-              ))}
-            </div>
-            <div className={styles.links}>
-              {item.links != undefined && ( <a href={item.links} target="_blank">{lang === "es" ? "visitar web" : "visit website"}</a> )}
-            </div>
+              <div className={styles.thumbnails}>
+                {item.imagenes.map((img, i) => (
+                  <img
+                    key={i}
+                    src={img}
+                    alt={`mini-${i}`}
+                    className={`${styles.thumb} ${
+                      i === activeIndex ? styles.active : ""
+                    }`}
+                    onClick={() => setActiveIndex(i)}
+                  />
+                ))}
+              </div>
+              {item.links != undefined && (
+                <div className={styles.links}>
+                  <a href={item.links} target="_blank">
+                    {lang === "es" ? "Ver mas" : "More info"}
+                  </a>
+                </div>
+              )}
             </>
           </>
         )}
