@@ -39,7 +39,7 @@ export default function Home() {
 
       <Footer lang={lang} texts={texts} />
 
-      {selected && <Modal item={selected} onClose={() => setSelected(null)} />}
+      {selected && <Modal item={selected} lang={lang} onClose={() => setSelected(null)} />}
     </div>
   );
 }
