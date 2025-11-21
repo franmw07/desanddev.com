@@ -27,6 +27,7 @@ export default function Modal({ item, lang, onClose }) {
             />
 
             {/* Miniaturas de video */}
+            <>
             <div className={styles.thumbnails}>
               {item.videos.map((vid, i) => (
                 <img
@@ -40,6 +41,10 @@ export default function Modal({ item, lang, onClose }) {
                 />
               ))}
             </div>
+            <div className={styles.links}>
+              {item.links != undefined && ( <a href={item.links} target="_blank">{lang === "es" ? "Ver mas" : "More info"}</a> )}
+            </div>
+            </>
           </>
         )}
 
@@ -54,6 +59,7 @@ export default function Modal({ item, lang, onClose }) {
             />
 
             {/* Carrusel de miniaturas */}
+            <>
             <div className={styles.thumbnails}>
               {item.imagenes.map((img, i) => (
                 <img
@@ -67,6 +73,10 @@ export default function Modal({ item, lang, onClose }) {
                 />
               ))}
             </div>
+            <div className={styles.links}>
+              {item.links != undefined && ( <a href={item.links} target="_blank">{lang === "es" ? "visitar web" : "visit website"}</a> )}
+            </div>
+            </>
           </>
         )}
 

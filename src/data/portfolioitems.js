@@ -18,10 +18,30 @@ import educa2 from "../assets/img/figmaAppDolmen.jpg";
 import dogsCamp from "../assets/img/dogsCamps.jpg";
 import logo1 from "../assets/practicas-antiguas/securityfordog.jpg";
 import logo2 from "../assets/practicas-antiguas/sparklecandy.jpg";
+import veci1 from "../assets/img/homeVECI.png";
+import veci2 from "../assets/img/footerVeci.png";
+import veci3 from "../assets/img/healCare.png";
+import veci4 from "../assets/img/homeBusiness.png";
 
 export const portfolioItems = [
-  {
+    {
     id: 1,
+    tipo: "imagen",
+    imagenes: [veci1, veci2, veci3, veci4,],
+    thumb: veci1,
+    titulo: {
+      es: "Diseño y Desarrollo Web — Viajes el Corte Inglés",
+      en: "Web Design and Development — El Corte Inglés Travel",
+    },
+    descripcion: {
+      es: "Web oficial de Viajes el Corte Inglés.",
+      en: "Official website of Viajes El Corte Inglés.",
+    },
+    links:
+      "https://www.viajeselcorteingles.es/",
+  },
+  {
+    id: 2,
     tipo: "imagen",
     imagenes: [tinino1, tinino2, tinino3, tinino4, tinino5],
     thumb: tinino4,
@@ -35,7 +55,7 @@ export const portfolioItems = [
     },
   },
   {
-    id: 2,
+    id: 3,
     tipo: "video",
     videos: [
       { src: videoSalon, thumb: imgVideoSalon }, 
@@ -52,7 +72,7 @@ export const portfolioItems = [
     },
   },
   {
-    id: 3,
+    id: 4,
     tipo: "imagen",
     imagenes: [imgSalon1, imgSalon2],
     thumb: imgSalon1,
@@ -66,7 +86,7 @@ export const portfolioItems = [
     },
   },
   {
-    id: 4,
+    id: 5,
     tipo: "imagen",
     imagenes: [educa1],
     thumb: educa1,
@@ -80,7 +100,7 @@ export const portfolioItems = [
     },
   },
   {
-    id: 5,
+    id: 6,
     tipo: "imagen",
     imagenes: [educa2],
     thumb: educa2,
@@ -96,7 +116,7 @@ export const portfolioItems = [
       "https://www.figma.com/proto/APQdl9IosfX9zoYr0SIh3f/Untitled?page-id=0%3A1&node-id=1-2&viewport=241%2C48%2C0.25&scaling=scale-down&starting-point-node-id=1%3A2",
   },
   {
-    id: 6,
+    id: 7,
     tipo: "imagen",
     imagenes: [dogsCamp],
     thumb: dogsCamp,
@@ -110,7 +130,7 @@ export const portfolioItems = [
     },
   },
   {
-    id: 7,
+    id: 8,
     tipo: "imagen",
     imagenes: [logo1, logo2,],
     thumb: logo1,
@@ -124,7 +144,7 @@ export const portfolioItems = [
     },
   },
   {
-    id: 8,
+    id: 9,
     tipo: "imagen",
     imagenes: [pract1, pract2, pract3, pract4],
     thumb: pract2,
